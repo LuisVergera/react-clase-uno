@@ -34,7 +34,7 @@ ReactDOM.render(
 // import { ToDoList } from './components/ToDoList.js';
 
 // ReactDOM.render(<ToDoList />, document.getElementById('react-app'));
-
+/*
 import { Tarjeta } from "./tarea/Tarea1.js";
 
 ReactDOM.render(
@@ -42,6 +42,23 @@ ReactDOM.render(
     nombre="Luis Vergera"
     titulo="Programador Front End"
     imagen="https://avatars.githubusercontent.com/u/69331928?v=4"
+  />,
+  document.getElementById("react-app")
+);*/
+
+import { BlogPost } from "./tarea/Tarea1.js";
+
+ReactDOM.render(
+  <BlogPost
+    titulo="Ardillas"
+    parrafos={`Hoy vi una ardilla.\n
+La ardilla era negra, era más grande que otras ardillas, tenía muchos dientes grandes y encima andaba siempre en cuatro patas, moviendo la cola.\n
+Creo que puede haber sido un perro, dado que en Argentina no hay ardillas.`}
+    autor={{
+      nombre: "Luis Vergera",
+      titulo: "Programador Front End",
+      imagen: "https://avatars.githubusercontent.com/u/69331928?v=4",
+    }}
   />,
   document.getElementById("react-app")
 );
