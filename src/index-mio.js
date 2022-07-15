@@ -35,6 +35,8 @@ ReactDOM.render(
 
 // ReactDOM.render(<ToDoList />, document.getElementById('react-app'));
 /*
+
+----------Tarea 1-----------
 import { Tarjeta } from "./tarea/Tarea1.js";
 
 ReactDOM.render(
@@ -45,7 +47,7 @@ ReactDOM.render(
   />,
   document.getElementById("react-app")
 );*/
-
+/*
 import { BlogPost } from "./tarea/Tarea1.js";
 
 ReactDOM.render(
@@ -60,5 +62,43 @@ Creo que puede haber sido un perro, dado que en Argentina no hay ardillas.`}
       imagen: "https://avatars.githubusercontent.com/u/69331928?v=4",
     }}
   />,
+  document.getElementById("react-app")
+);*/
+
+//------------TAREA 2-----------------------
+/*
+import { MatchNombre } from "./tarea/Tarea2.js";
+
+ReactDOM.render(
+  <MatchNombre nombre="Luis"></MatchNombre>,
+  document.getElementById("react-app")
+);*/
+/*
+import { PasswordInput } from "./tarea/Tarea2.js";
+
+ReactDOM.render(
+  <PasswordInput minLength={5} type="password"></PasswordInput>,
+  document.getElementById("react-app")
+);*/
+/*
+import { ValidationInput } from "./tarea/Tarea2.js";
+
+ReactDOM.render(
+  <ValidationInput
+    validation={(value) => value.length >= 8}
+    isPassword={(value) => value.length >= 8}
+  />,
+  document.getElementById("react-app")
+);*/
+
+//-----------TAREA 3------------------------
+
+import { UncontrolledCheckbox } from "./tarea/Tarea3.js";
+
+ReactDOM.render(
+  <UncontrolledCheckbox
+    name="Checkbox"
+    // initialValue={(state) => (state ? true : false)}
+  ></UncontrolledCheckbox>,
   document.getElementById("react-app")
 );
