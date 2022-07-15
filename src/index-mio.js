@@ -92,13 +92,51 @@ ReactDOM.render(
 );*/
 
 //-----------TAREA 3------------------------
-
+/*
 import { UncontrolledCheckbox } from "./tarea/Tarea3.js";
 
 ReactDOM.render(
   <UncontrolledCheckbox
     name="Checkbox"
-    // initialValue={(state) => (state ? true : false)}
+    initialValue={false}
   ></UncontrolledCheckbox>,
+  document.getElementById("react-app")
+);
+
+import { CheckboxList } from "./tarea/Tarea3.js";
+
+ReactDOM.render(
+  <CheckboxList
+    items={{
+      uno: false,
+      dos: true,
+      tres: false,
+    }}
+  />,
+  document.getElementById("react-app")
+);
+*/
+
+//--------TAREA 4-------------------
+
+import { ControlledCheckbox, CheckboxListWithState } from "./tarea/Tarea4.js";
+
+ReactDOM.render(
+  <ControlledCheckbox
+    name="Checkbox"
+    value={false}
+    onChange={() => setState(!state)}
+  ></ControlledCheckbox>,
+  document.getElementById("react-app")
+);
+
+ReactDOM.render(
+  <CheckboxListWithState
+    items={{
+      uno: false,
+      dos: true,
+      tres: false,
+    }}
+  />,
   document.getElementById("react-app")
 );
