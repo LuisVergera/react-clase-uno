@@ -119,16 +119,7 @@ ReactDOM.render(
 
 //--------TAREA 4-------------------
 
-import { ControlledCheckbox, CheckboxListWithState } from "./tarea/Tarea4.js";
-
-ReactDOM.render(
-  <ControlledCheckbox
-    name="Checkbox"
-    value={false}
-    onChange={() => setState(!state)}
-  ></ControlledCheckbox>,
-  document.getElementById("react-app")
-);
+import { CheckboxListWithState } from "./tarea/Tarea4.js";
 
 ReactDOM.render(
   <CheckboxListWithState
@@ -140,3 +131,14 @@ ReactDOM.render(
   />,
   document.getElementById("react-app")
 );
+/*
+ReactDOM.render(
+  <CheckboxListWithState
+    items={{
+      uno: false,
+      dos: true,
+      tres: false,
+    }}
+  />,
+  document.getElementById("react-app")
+);*/

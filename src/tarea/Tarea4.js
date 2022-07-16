@@ -42,10 +42,9 @@ export function ControlledCheckbox(props) {
 
 export function CheckboxListWithState(props) {
   const [state, setState] = React.useState(props.items);
-  const states = Object.entries(props.items);
   return (
     <div>
-      {states.map(([key, value]) => (
+      {Object.entries(state).map(([key, value]) => (
         <ControlledCheckbox
           key={key}
           value={value}
